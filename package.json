@@ -1,0 +1,24 @@
+{
+  "name": "aj-website",
+  "version": "1.0.0",
+  "description": "A portfolio website that will contain all my projects, education, and career accomplishments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajnatzic/AJ-Website.git"
+  },
+  "author": "AJ Natzic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajnatzic/AJ-Website/issues"
+  },
+  "homepage": "https://github.com/ajnatzic/AJ-Website#readme",
+  "dependencies": {
+    "node": "^13.12.0",
+    "node-sass": "^4.13.1"
+  }
+}
