@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/ajnatzic/AJ-Website#readme",
   "dependencies": {
-    "node": "^13.12.0",
     "node-sass": "^4.13.1"
   }
 }
