@@ -8,6 +8,22 @@ function Square(props) {
   );
 }
 
+// Renders a change log on the right hand side of the game.
+// This list should include ORIGINAL features I have added that are different
+// than the base tutorial code
+function ChangeLog() {
+    return (
+      <div className="changeLog">
+      <h6>Change Log</h6>
+        <ul>
+          <li>Yeehaw man</li>
+          <li>Yeehaw man</li>
+          <li>Yeehaw man</li>
+        </ul>
+      </div>
+    );
+}
+
 class Board extends React.Component {
   renderSquare(i) {
     return (
@@ -117,12 +133,18 @@ class Game extends React.Component {
   }
 }
 
+
 // ========================================
 
 ReactDOM.render(
   <Game />,
   document.getElementById('root')
 );
+// TODO: Add the change log when it's done
+// ReactDOM.render(
+//   <ChangeLog />,
+//   document.getElementById('ChangeLog')
+// );
 
 function calculateWinner(squares) {
   const lines = [
