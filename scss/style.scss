@@ -759,6 +759,12 @@ h1, h2, h3, h4, h5,
     max-width:200px;
     height:auto;
   }
+  @media only screen and (max-width:600px){
+    .resume-image{
+      max-width: 50px;
+      height: auto;
+    }
+  }
 	.text{
 		width: calc(100% - 50px);
 	}

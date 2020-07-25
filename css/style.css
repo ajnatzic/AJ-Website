@@ -7592,6 +7592,10 @@ h1, h2, h3, h4, h5,
   .resume-wrap .resume-image {
     max-width: 200px;
     height: auto; }
+  @media only screen and (max-width: 600px) {
+    .resume-wrap .resume-image {
+      max-width: 50px;
+      height: auto; } }
   .resume-wrap .text {
     width: calc(100% - 50px); }
   .resume-wrap .date {
@@ -8502,7 +8506,15 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
 
-/** Styling for TicTacToe app*/
+/** This styling is used for the tic-tac-toe board*/
+/** NOTE: Some of the following styling is from the interactive ReactJS tutorial on ReactJS.org*/
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px; }
+
+ol, ul {
+  padding-left: 30px; }
+
 .board-row:after {
   clear: both;
   content: "";
@@ -8533,7 +8545,15 @@ textarea.form-control {
 
 .game {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: center; }
 
 .game-info {
-  margin-left: 20px; }
+  margin-left: 20px;
+  /** This height makes it so the max amount of moves can fit in game-info without expanding the page */
+  height: 263px; }
+
+.changeLog {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
