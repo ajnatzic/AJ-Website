@@ -420,7 +420,25 @@
     			</div>
     		</div>
     	</div>
+      <!-- TODO: The styling here is rather messy. Should be moved to style.scss with it's own class  -->
+      <div class="col-md-12 heading-section text-center ftco-animate fadeInUp ftco-animated" style="padding: 2em 0;">
+      	<h1 class="big big-2">Interactive</h1>
+        <h2 class="mb-4">Interactive Projects</h2>
+        <br>
+        <div style="display: flex;
+        flex-direction: row;
+        justify-content: center;">
+        <p style="text-align: left; justify-content: center; diplay: inline-block; font-size: 20px; word-wrap: break-word; width: 30em;">
+          This is a Tic-Tac-Toe game designed in <span style="color: red; font-weight: bold;">React</span>. I used the tutorial on ReactJS.org to help me create this.
+          The base features include a working tic-tac-toe game that let's you "time travel" to previous moves.
+          This was achieved by using immutable arrays and "copying" data into a history (as opposed to changing
+          the board array directly).
+        </p>
+        </div>
+      </div>
 
+
+      <!-- This section is to handle errors for the interactive tic tac-toe-game loaded below -->
       <div id="errors" style="
         background: #c00;
         color: #fff;
@@ -460,7 +478,10 @@
       })(console.error);
       </script>
 
+      <!-- React app is loaded in this div (see my-app/src/index.js) -->
       <div id="tictactoe_container"></div>
+      <!-- TODO: Add Change Log -->
+      <!-- <div id="ChangeLog"></div> -->
 
 
     </section>
