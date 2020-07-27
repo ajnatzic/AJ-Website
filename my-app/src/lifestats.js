@@ -27,6 +27,8 @@ function FormattedDate(props) {
 }
 
 
+// Thanks to this stack overflow question for this function
+// https://stackoverflow.com/questions/9763441/milliseconds-to-time-in-javascript
 
 function msToTime(s) {
 
