@@ -5,7 +5,7 @@ function FormattedDate(props) {
   var daysAlive = Math.floor(msAlive / (1000*60*60*24))
   var daysAwake = Math.floor((daysAlive * 16)/ 24);
   var hoursSlept = Math.floor(daysAlive * 8);
-  var daysSlept = Math.floor(daysAlive * 8) / 24;
+  var daysSlept = Math.floor((daysAlive * 8) / 24);
   var coffeeDrank = Math.floor((new Date() / (1000*60*60*24)) - (new Date("02-14-2014") / (1000*60*60*24)));
   console.log(msAlive);
   return (
