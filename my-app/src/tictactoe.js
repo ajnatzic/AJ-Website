@@ -1,4 +1,4 @@
-/** NOTE: This file is from the interactive ReactJS tutorial on ReactJS.org. */
+// I used starter code from the React documentation to create this script
 
 function Square(props) {
   return (
