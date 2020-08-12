@@ -6,6 +6,7 @@ function FormattedDate(props) {
   var daysAwake = Math.floor((daysAlive * 16)/ 24);
   var hoursSlept = Math.floor(daysAlive * 8);
   var daysSlept = Math.floor((daysAlive * 8) / 24);
+  var percentSlept = Math.floor((daysSlept / (daysSlept + daysAwake))  * 100); // daysSlept + daysAwake = time since birthday
   var coffeeDrank = Math.floor((new Date() / (1000*60*60*24)) - (new Date("02-14-2014") / (1000*60*60*24)));
   console.log(msAlive);
   return (
@@ -19,6 +20,8 @@ function FormattedDate(props) {
   Assuming 8 hours of sleep everyday, I've slept: <span className="time">{hoursSlept} hours</span> or <span className="time">{daysSlept} consecutive days.</span>
   <br/><br/>
   ...And I've been awake for <span className="time">{daysAwake} days {msToTime(msAlive)} </span>
+  <br/><br/>
+  Therefore, I have slept for <span className="time">{percentSlept}% of my life.</span> What a waste...
   <br/><br/>
   Assuming I have had 1 cup of coffee everyday since I was 15, I have had  <span className="time">{coffeeDrank}</span> cups of coffee in my life.
   </p>
